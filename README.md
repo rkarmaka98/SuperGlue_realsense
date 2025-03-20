@@ -2,11 +2,20 @@
 
 This repository demonstrates how to use the SuperGlue feature matching algorithm with an Intel RealSense camera for real-time feature matching and visualization. The project is built using Python, OpenCV, PyTorch, and the RealSense SDK.
 
+SuperGlue is a deep learning-based feature matching algorithm designed for accurate and robust keypoint matching between images. It builds upon SuperPoint, a self-supervised keypoint detector, and employs a graph neural network (GNN) to establish correspondences by considering spatial relationships and contextual information between keypoints. Unlike traditional feature matching methods that rely solely on descriptor similarity, SuperGlue enhances matches by leveraging attention mechanisms, making it highly effective for tasks like SLAM, structure-from-motion, and real-time tracking. Its ability to integrate with GPU acceleration via PyTorch allows for fast inference, making it a powerful tool for applications requiring high-precision feature matching.
+
+![image](https://github.com/user-attachments/assets/d55d7646-43c2-46ae-b6e4-77c33b43aa25)
+
+
 ## Features
 - **Real-Time Feature Matching**: Match keypoints between consecutive frames from a RealSense camera.
 - **Customizable Visualization**: Adjust keypoint colors, matching lines, and text overlays.
 - **CUDA Support**: Leverage GPU acceleration for faster inference (if available).
 - **RealSense Integration**: Seamlessly integrate with Intel RealSense cameras for live video input.
+
+
+https://github.com/user-attachments/assets/cdb636bb-9483-4683-9d57-81e889b66bae
+
 
 ## Requirements
 - Python 3.8+
